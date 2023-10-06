@@ -1,0 +1,42 @@
+<!-- <div class="sidebar" [ngClass]="{'show': isSidebarOpen}">
+  <div class="logo">
+    <img src="your-logo.png" alt="Company Logo">
+  </div>
+  <ul class="sidebar-links">
+    <li><a routerLink="" translate="SIDEBAR.HOME" class="black-text "></a></li>
+    <li><a routerLink="createinvoice" translate="SIDEBAR.CargoManifest" class="black-text "></a></li>
+  </ul>
+
+</div> -->
+
+<!-- sidebar.component.html -->
+
+
+
+<div class="sidebar" [ngClass]="{'collapsed': isSidebarCollapsed}">
+  <button (click)="toggleSidebar()"> ☰ </button>
+  <br>
+  <br>
+  <br>
+  <div class="logo">
+    <img src="your-logo.png"translate="SIDEBAR.Logo" alt="Logo">
+  </div>
+  <ul class="sidebar-links">
+    <li>
+      <a routerLink="" translate="SIDEBAR.HOME" class="black-text "></a>
+    </li>
+    <li><a routerLink="about" translate="SIDEBAR.About" class="black-text "></a></li>
+    <li>
+      <a (click)="toggleSubMenu('menu1')" routerLink="contact" translate="SIDEBAR.Contact" class="black-text"></a>
+      <ul class="submenu" *ngIf="isSubMenuOpen['menu1']">
+        <li><a routerLink="submenu1" translate="SIDEBAR.SUBMENU"class="black-text"></a></li>
+        <li><a routerLink="submenu2" translate="SIDEBAR.SUBMENU" class="black-text"></a></li>
+      </ul>
+    </li>
+
+    <!-- <li><a routerLink="createinvoice" translate="SIDEBAR.About" class="black-text "></a></li> -->
+  </ul>
+ 
+</div>
+
+

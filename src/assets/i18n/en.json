@@ -1,0 +1,17 @@
+{
+  "SIDEBAR": {
+    "Registration": "Registration",
+    "About": "About",
+    "HOME": "Home",
+    "DASHBOARD": "Dashboard",
+    "ID": "ID",
+    "Name": "Name",
+    "Age": "Age",
+    "City": "City",
+    "USERS": "Users",
+     "SUBMENU":"Submenu",
+     "Contact":"Contact"
+
+  }
+   
+}
